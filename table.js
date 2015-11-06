@@ -8,7 +8,7 @@
   
   $.validator.addMethod('lessThan', function(value, element, param) {
    return this.optional(element) || parseInt(value) < param ;
-      };
+      }, "The starting value must be less than the end value");
   
     // Setup form validation on the submit form
     $("#submitform").validate({
