@@ -27,33 +27,33 @@
         messages: {
             multiplierstart: {
                 required: "Please provide a starting multiplier value",
-                number: "Please only submit numbers"
+                number: "Please only submit numbers for starting multiplier value"
             },
             multiplierend: {
                 required: "Please provide a ending multiplier value",
-                number: "Please only submit numbers"
+                number: "Please only submit numbers for ending multiplier value"
             },
             multiplicandstart: {
                 required: "Please provide a starting multiplicand value",
-                number: "Please only submit numbers"
+                number: "Please only submit numbers for starting multiplicand value"
             },
             multiplicandend: {
                 required: "Please provide a ending multiplicand value",
-                number: "Please only submit numbers"
+                number: "Please only submit numbers for ending multiplicand value"
             },
             submitHandler: function(form) {
             form.submit();
         }
-        }
+        },
+        errorElement : 'div',
+        errorLabelContainer: '.errorTxt'
+        
     });
 
   });
  
        // Generates multiplication table
        var createTable = function(){
-           //Removes error msg if there was a previous one leftover
-           document.getElementById("errormsg").innerHTML =
-                   "";
            //Calculate amount of rows and cols based on user input
            var rows = document.getElementById("multiplierend").value - document.getElementById("multiplierstart").value + 1;
            console.log(rows);
