@@ -6,6 +6,10 @@
 //Description: Js file that includes table creation and validation functions
  $(function() {
   
+  $.validator.addMethod('lessThanEqual', function(value, element, param) {
+   return this.optional(element) || parseInt(value) <= param ;
+      }, "The starting value must be less than the end value");
+  
     // Setup form validation on the submit form
     $("#submitform").validate({
     
@@ -14,7 +18,8 @@
             multiplierstart: {
                 required: true,
                 number: true,
-                min: -20
+                min: -20,
+                lessThanEqual: document.getElementById("multiplierend").value
             },
             multiplierend: {
                 required: true,
@@ -38,7 +43,8 @@
             multiplierstart: {
                 required: "Please provide a starting multiplier value",
                 number: "Please only submit numbers for starting multiplier value",
-                min: "Please submit a value greater than -20 for the starting multiplier value"
+                min: "Please submit a value greater than -20 for the starting multiplier value",
+                lessThanEqual: "Please submit a starting multiplier value smaller than the ending multiplier value"
             },
             multiplierend: {
                 required: "Please provide a ending multiplier value",
