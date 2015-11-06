@@ -51,6 +51,7 @@
             form.submit();
         }
         },
+        //Setting error message id
         errorElement : 'div',
         errorLabelContainer: '.errorTxt'
         
