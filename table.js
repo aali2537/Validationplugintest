@@ -48,7 +48,7 @@
             multiplicandstart: {
                 required: "Please provide a starting multiplicand value",
                 number: "Please only submit numbers for starting multiplicand value",
-                min: "Please submit a value greater than 20 for the starting multiplicand value"
+                min: "Please submit a value greater than -20 for the starting multiplicand value"
             },
             multiplicandend: {
                 required: "Please provide a ending multiplicand value",
