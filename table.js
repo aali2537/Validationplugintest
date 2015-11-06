@@ -13,19 +13,23 @@
         rules: {
             multiplierstart: {
                 required: true,
-                number: true
+                number: true,
+                min: -20
             },
             multiplierend: {
                 required: true,
-                number: true
+                number: true,
+                max: 20
             },
             multiplicandstart: {
                 required: true,
-                number: true
+                number: true,
+                min: -20
             },
             multiplicandend: {
                 required: true,
-                number: true
+                number: true,
+                max:20
             }
         },
         
@@ -33,19 +37,23 @@
         messages: {
             multiplierstart: {
                 required: "Please provide a starting multiplier value",
-                number: "Please only submit numbers for starting multiplier value"
+                number: "Please only submit numbers for starting multiplier value",
+                min: "Please submit a value greater than -20 for the starting multiplier value"
             },
             multiplierend: {
                 required: "Please provide a ending multiplier value",
-                number: "Please only submit numbers for ending multiplier value"
+                number: "Please only submit numbers for ending multiplier value",
+                max: "Please submit a value less than 20 for the ending muliplier value"
             },
             multiplicandstart: {
                 required: "Please provide a starting multiplicand value",
-                number: "Please only submit numbers for starting multiplicand value"
+                number: "Please only submit numbers for starting multiplicand value",
+                min: "Please submit a value greater than 20 for the starting multiplicand value"
             },
             multiplicandend: {
                 required: "Please provide a ending multiplicand value",
-                number: "Please only submit numbers for ending multiplicand value"
+                number: "Please only submit numbers for ending multiplicand value",
+                max: Please submit a value less than 20 for the ending multiplicand value"
             },
             submitHandler: function(form) {
             form.submit();
