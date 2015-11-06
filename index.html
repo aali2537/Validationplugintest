@@ -24,14 +24,14 @@ Description: Dynamically created a table based on user inputs
          <!-- Generate input boxes for form -->
          <form action="javascript:createTable();" id="submitform">
             <p>Please enter the following numbers.</p><br>
-            Multiplier Start: <input type="text" id="multiplierstart" name="multiplierstart"><br>
-            Multiplier End: <input type="text" id="multiplierend" name="multiplierend"><br>
-            Multiplicand Start: <input type="text" id="multiplicandstart" name="multiplicandstart"><br>
+            Multiplier Start: <input type="text" id="multiplierstart" name="multiplierstart"><br><br>
+            Multiplier End: <input type="text" id="multiplierend" name="multiplierend"><br><br>
+            Multiplicand Start: <input type="text" id="multiplicandstart" name="multiplicandstart"><br><br>
             Multiplicand End: <input type="text" id="multiplicandend" name="multiplicandend"><br>
             <br><br>
             <input type="submit" value="Generate Table">
+            <label for="multiplierstart" class="errorTxt"></label>
          </form>
-         <p id="errormsg"></p>
          <div id="usertable"></div>
      </body>
    
