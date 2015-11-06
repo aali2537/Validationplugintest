@@ -1,3 +1,9 @@
+ //91.461 Assignment 7:  Creating an Interactive Dynamic Table
+//Name: Alexander Li
+//Email: Alexander_li1@student.uml.edu
+//Affiliation: Umass Lowell Computer Science Undergraduate, in class 91.461 GUI Programming I
+//Date Created: 11/5/2015
+//Description: Js file that includes table creation and validation functions
  $(function() {
   
     // Setup form validation on the submit form
