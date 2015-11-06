@@ -13,26 +13,30 @@ body {
     color: #ffffff;
     font-family: 'Lato', sans-serif;
 }
-//centering table
+/*centering table */
 div{
       text-align: center;
   }
+  /* table styling*/
 table {
     color: #1a1a1a;
     margin-left:auto; 
     margin-right:auto;
     border: 1px solid #1ABC9C;
   }
+  /*making sure individual cells are same size */
   td{
       width: 4rem;
   height: 2rem;
   border: 1px solid #ccc;
   text-align: center;
   }
+  /* top left box should be empty */
   .empty{
       background: #1ABC9C;
   border-color: #1ABC9C;
   }
+  /* multilpier/multiplicand row styling */
   .outrow{
       font-weight: bold;
       color: black;
