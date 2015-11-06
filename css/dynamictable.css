@@ -40,3 +40,11 @@ table {
       background: lightblue;
   border-color: white;
   }
+  /*styling for error messages */
+   .error{
+      color:#e53935;
+  }
+  /*styling for highlighting boxes corresponding with error*/
+  select.error, textarea.error, input.error {
+    border: 2px solid #e53935;
+}
