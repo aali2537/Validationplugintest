@@ -14,8 +14,7 @@
             multiplierstart: {
                 required: true,
                 number: true,
-                min: -20,
-                max: document.getElementById("multiplierend").value
+                min: -20
             },
             multiplierend: {
                 required: true,
@@ -39,8 +38,7 @@
             multiplierstart: {
                 required: "Please provide a starting multiplier value",
                 number: "Please only submit numbers for starting multiplier value",
-                min: "Please submit a value greater than -20 for the starting multiplier value",
-                max: "Please submit a starting multiplier value less than the ending multiplier value"
+                min: "Please submit a value greater than -20 for the starting multiplier value"
             },
             multiplierend: {
                 required: "Please provide a ending multiplier value",
