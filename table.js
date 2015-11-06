@@ -53,7 +53,7 @@
             multiplicandend: {
                 required: "Please provide a ending multiplicand value",
                 number: "Please only submit numbers for ending multiplicand value",
-                max: Please submit a value less than 20 for the ending multiplicand value"
+                max: "Please submit a value less than 20 for the ending multiplicand value"
             },
             submitHandler: function(form) {
             form.submit();
